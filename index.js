@@ -56,6 +56,9 @@
 // console.log(hashTable);
 
 let arr = [66, 67, 88, 89, 90, 91, 93, 95];
+let arr2 = [1, 2, 3, 4, 5, 6];
+// console.log(iterativeReverseArray(arr2));
+console.log(recursiveReverseArray(arr2));
 // iterativeBinarySearch(arr, 66);
-recursiveBinarySearch(arr, 89, 0, 7);
+// recursiveBinarySearch(arr, 89, 0, 7);
 // console.log(insertionSort(arr));
