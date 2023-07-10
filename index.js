@@ -44,13 +44,16 @@
 // queue.printQueue();
 // queue.peek();
 
-const hashTable = new HashTable();
+// const hashTable = new HashTable();
 
-hashTable.set("Igor", 412997);
-hashTable.set("Marko", 123242);
-hashTable.set("Alek", 231);
-hashTable.set("Sima", 324);
-console.log(hashTable);
-hashTable.get("Marko");
-hashTable.remove("Marko");
-console.log(hashTable);
+// hashTable.set("Igor", 412997);
+// hashTable.set("Marko", 123242);
+// hashTable.set("Alek", 231);
+// hashTable.set("Sima", 324);
+// console.log(hashTable);
+// hashTable.get("Marko");
+// hashTable.remove("Marko");
+// console.log(hashTable);
+
+let arr = [1, 6, 2, 88, 34, 78, 99, 2, 53];
+console.log(insertionSort(arr));
