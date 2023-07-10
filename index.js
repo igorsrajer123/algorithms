@@ -55,5 +55,7 @@
 // hashTable.remove("Marko");
 // console.log(hashTable);
 
-let arr = [1, 6, 2, 88, 34, 78, 99, 2, 53];
-console.log(insertionSort(arr));
+let arr = [66, 67, 88, 89, 90, 91, 93, 95];
+// iterativeBinarySearch(arr, 66);
+recursiveBinarySearch(arr, 89, 0, 7);
+// console.log(insertionSort(arr));
