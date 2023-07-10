@@ -2,10 +2,11 @@ class Node {
   constructor(value) {
     this.value = value;
     this.next = null;
+    this.prev = null;
   }
 }
 
-class SinglyLinkedList {
+class DoublyLinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -25,6 +26,8 @@ class SinglyLinkedList {
         document.write(
           "Value: ",
           current.value,
+          ", Previous value: ",
+          current.prev ? `${current.prev.value}` : "NULL",
           ", Next value: ",
           current.next ? `${current.next.value}` : "NULL"
         );
@@ -33,7 +36,7 @@ class SinglyLinkedList {
     }
   }
 
-  //Add to the end of the list
+  //Add to the end of list
   push(value) {
     let newNode = new Node(value);
 
@@ -41,9 +44,11 @@ class SinglyLinkedList {
       this.head = newNode;
       this.tail = this.head;
     } else {
+      newNode.prev = this.tail;
       this.tail.next = newNode;
       this.tail = newNode;
     }
+
     this.length++;
   }
 
@@ -56,13 +61,14 @@ class SinglyLinkedList {
       this.tail = this.head;
     } else {
       newNode.next = this.head;
+      this.head.prev = newNode;
       this.head = newNode;
     }
+
     this.length++;
   }
 
-  //Remove from the end of the list
-  //This function can be refactored
+  //Refactor this function
   pop() {
     if (!this.head) {
       console.log("No head present in the Linked List!");
@@ -75,23 +81,27 @@ class SinglyLinkedList {
         return;
       }
 
-      let current = this.head;
-      while (current.next !== this.tail) {
-        current = current.next;
-      }
-
-      this.tail = current;
+      this.tail = this.tail.prev;
       this.tail.next = null;
       this.length--;
     }
   }
 
+  //Refactor this function
   removeFromStart() {
     if (!this.head) {
       console.log("No head present in the Linked List!");
       return;
     } else {
+      if (this.length === 1) {
+        this.head = null;
+        this.tail = null;
+        this.length--;
+        return;
+      }
+
       this.head = this.head.next;
+      this.head.prev = null;
       this.length--;
     }
   }
