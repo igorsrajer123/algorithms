@@ -33,15 +33,24 @@
 // stack.pop();
 // stack.printStack();
 
-const queue = new Queue();
-queue.enqueue(55);
-queue.enqueue(65);
-queue.enqueue(4);
-queue.enqueue(23);
-queue.enqueue(44);
-queue.printQueue();
+// const queue = new Queue();
+// queue.enqueue(55);
+// queue.enqueue(65);
+// queue.enqueue(4);
+// queue.enqueue(23);
+// queue.enqueue(44);
+// queue.printQueue();
+// queue.dequeue();
+// queue.printQueue();
+// queue.peek();
 
-queue.dequeue();
-queue.printQueue();
+const hashTable = new HashTable();
 
-queue.peek();
+hashTable.set("Igor", 412997);
+hashTable.set("Marko", 123242);
+hashTable.set("Alek", 231);
+hashTable.set("Sima", 324);
+console.log(hashTable);
+hashTable.get("Marko");
+hashTable.remove("Marko");
+console.log(hashTable);
