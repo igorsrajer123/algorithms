@@ -22,3 +22,13 @@
 // doubleList.pop();
 // doubleList.printList();
 // console.log(doubleList);
+
+const stack = new Stack();
+stack.push(55);
+stack.push(12);
+stack.push(27);
+stack.push(76);
+stack.printStack();
+stack.peek();
+stack.pop();
+stack.printStack();
