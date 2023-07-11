@@ -59,7 +59,8 @@ let arr = [66, 67, 88, 89, 90, 91, 93, 95];
 let arr2 = [1, 2, 3, 4, 5, 6];
 
 let arr3 = [3, 6, 10, 1, 8, 9, 9, 8, 9];
-console.log(maxAscendingSum(arr3));
+sumOfNonDuplicateElements(arr3);
+// console.log(maxAscendingSum(arr3));
 // console.log(quickSort(arr));
 
 // console.log(memoizationNthFibonacci(6));
