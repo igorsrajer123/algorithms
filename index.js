@@ -60,7 +60,7 @@ let arr2 = [1, 2, 3, 4, 5, 6];
 
 let arr3 = [-4, -1, 0, 3, 10];
 
-sortedSquares(arr3);
+// sortedSquares(arr3);
 // sumOfNonDuplicateElements(arr3);
 // console.log(maxAscendingSum(arr3));
 // console.log(quickSort(arr));
@@ -79,3 +79,8 @@ sortedSquares(arr3);
 // iterativeBinarySearch(arr, 66);
 // recursiveBinarySearch(arr, 89, 0, 7);
 // console.log(insertionSort(arr));
+
+const names = ["Igor", "Nebojsa", "Mario"];
+const heights = [182, 181, 185];
+
+sortPeople(names, heights);
