@@ -80,7 +80,10 @@ let arr3 = [-4, -1, 0, 3, 10];
 // recursiveBinarySearch(arr, 89, 0, 7);
 // console.log(insertionSort(arr));
 
-const names = ["Igor", "Nebojsa", "Mario"];
-const heights = [182, 181, 185];
+// const names = ["Igor", "Nebojsa", "Mario"];
+// const heights = [182, 181, 185];
 
-sortPeople(names, heights);
+// sortPeople(names, heights);
+
+let sentence = "is2 sentence4 This1 a3";
+sortSentence(sentence);
