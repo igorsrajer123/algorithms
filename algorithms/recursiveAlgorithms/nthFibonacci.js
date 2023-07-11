@@ -21,3 +21,11 @@ function recursiveNthFibonacci(n) {
 
   return recursiveNthFibonacci(n - 1) + recursiveNthFibonacci(n - 2);
 }
+
+function memoizationNthFibonacci(n, memo = [0, 1, 1]) {
+  if (memo.includes(n)) return memo[n];
+
+  memo[n] =
+    memoizationNthFibonacci(n - 1, memo) + memoizationNthFibonacci(n - 2, memo);
+  return memo[n];
+}

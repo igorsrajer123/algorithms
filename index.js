@@ -58,7 +58,9 @@
 let arr = [66, 67, 88, 89, 90, 91, 93, 95];
 let arr2 = [1, 2, 3, 4, 5, 6];
 
-recursiveFirstNFibonacci(6);
+console.log(memoizationNthFibonacci(6));
+
+// recursiveFirstNFibonacci(6);
 // console.log(iterativeFirstNFibonacci(3));
 // console.log(iterativeNthFibonacci(3));
 // console.log(recursiveNthFibonacci(5));
